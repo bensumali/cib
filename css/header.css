@@ -1,0 +1,293 @@
+header {
+    background-color: #0064a4;
+    border-bottom: 5px solid #FDDA2D;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+#header-content-container {
+    height: 100%;
+    margin: 0px 35px;
+}
+.header-content {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+#header-content-1 {
+    background-image: url("../img/uci-student-affairs-banner.png");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+}
+#header-content-1 a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#header-content-2 {
+    text-align: right;
+}
+#header-content-2:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+#btn-menu {
+    border: 0px;
+    display: inline-block;
+    width: 46px;
+    vertical-align: middle;
+}
+#btn-menu:focus, #btn-menu:active {
+    outline: none;
+}
+.btn-menu-row {
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 4px;
+    border-radius: 1px;
+
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.btn-menu-row:last-child {
+    margin-bottom: 0px;
+}
+/*#nav-main {
+    background-color: #091A15;
+    display: none;
+    font-weight: 100;
+    height: calc(100% - 90px);
+    letter-spacing: 2px;
+    margin-top: 90px;
+    opacity: 0;
+    overflow: scroll;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+#nav-main::-webkit-scrollbar {
+    display: none;
+}
+#nav-main:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.001em; /* Adjusts for spacing */
+}
+/*#nav-main ul {
+    list-style: none;
+    margin-bottom: 50px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+#nav-main ul li {
+    //margin-bottom: 15px;
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
+}
+#nav-main ul li:last-child {
+    margin-bottom: 0px;
+}
+#nav-main a {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 36px;
+
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+#nav-main form input[type="submit"], #menu-other a {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 36px;
+
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+#nav-main a:link, #nav-main a:visited, #nav-main form input[type="submit"] {
+    color: #FFFFFF;
+}
+#nav-main a:hover, #nav-main a:focus, #nav-main form input[type="submit"]:hover {
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#nav-main form input[type="submit"]:hover, #menu-other a:hover {
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#nav-main .menu-items-container {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+#nav-main form input[type="text"] {
+    border: 0px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: black;
+    display: inline;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 15px;
+    width: 150px;
+    vertical-align: top;
+}
+#nav-main form input:focus, #nav-main form input:active, #search-icon:focus, #search-icon:active {
+    outline: none;
+}*/*/
+#search-icon {
+    background-color: white;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #919191;;
+    display: inline;
+    height: 24px;
+    line-height: 24px;
+    margin: 0px;
+    vertical-align: top;
+}
+#menu-logo {
+    margin-bottom: 30px !important;
+}
+#menu-logo img {
+    height: 50px;
+}
+#menu-other {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 18px;
+}
+.menu-items-container {
+    opacity: 0;
+}
+@media screen and (max-width: 767px) {
+    header {
+        height: 50px;
+    }
+    #header-content-container {
+        margin: 0px 3%;
+    }
+    #header-content-1 {
+        background-size: auto 50%;
+    }
+    #btn-menu {
+        height: 100%;
+        width: 46px;
+    }
+    .btn-menu-row {
+        height: 2px;
+        margin-bottom: 4px;
+        border-radius: 1px
+    }
+    #nav-main {
+        height: calc(100% - 50px);
+        margin-top: 50px;
+    }
+    #nav-main .menu-items-container {
+        font-size: 16px;
+    }
+    #nav-main ul li {
+        line-height: 24px !important;
+        margin-bottom: 10px;
+    }
+    #nav-main ul li a {
+        font-size: 16px;
+        font-weight: 200;
+    }
+    #nav-main form input[type="submit"], #menu-other a {
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 18px;
+    }
+}
+@media screen and ( min-height: 415px ){
+    #nav-main {
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media screen and ( max-height: 414px ){
+    #nav-main {
+        overflow: scroll;
+    }
+    #nav-main ul {
+        height: 80%
+    }
+    #nav-main ul li {
+        height: 20%;
+        margin: 15px !important;
+        vertical-align: middle;
+    }
+    #nav-main form input[type="text"] {
+        height: 20px;
+        line-height: 20px;
+        max-width: 100px;
+        width: 70%;
+    }
+    #search-icon {
+        height: 20px;
+    }
+    #nav-main ul li a {
+        display: inline-block;
+        height: 100%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    #nav-main a, #nav-main input[type="submit"] {
+        font-size: 14px !important;
+    }
+    #menu-logo img {
+        height: 25px;
+    }
+    .menu-items-container {
+        height: 100%;
+    }
+    #nav-main ul,  #menu-other-content{
+        display: inline-block;
+        margin: 0px;
+        vertical-align: middle;
+    }
+    #menu-main {
+        overflow: scroll;
+    }
+    #menu-main, #menu-other {
+        display: inline-block;
+        float: left;
+        height: 100%;
+        width: 50%;
+        vertical-align: middle;
+    }
+    #menu-main:before, #menu-other:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+}

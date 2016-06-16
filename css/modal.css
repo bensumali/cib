@@ -1,0 +1,14 @@
+.modal-content {
+  border-radius: 0px;
+}
+.modal-header {
+  background-color: red;
+  color: white;
+}
+.modal-header button {
+  color: white;
+  opacity: 1;
+}
+.modal-header button:focus, .modal-header button:active {
+  outline: none;
+}

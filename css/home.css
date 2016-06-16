@@ -1,0 +1,19 @@
+#employees-container {
+  height: 100%;
+}
+#no-employees-container {
+  height: 100%;
+  white-space: nowrap;
+}
+#no-employees-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+#no-employees-text {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: pre-line;
+}

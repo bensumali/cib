@@ -1,0 +1,29 @@
+#nav-main {
+  background-color: #17141f;
+  height: 100%;
+  position: fixed;
+  right: -300px;
+  top: 50px;
+  width: 300px;
+
+  transition: 0.2s all;
+}
+#nav-main.active {
+  right: 0px;
+}
+#nav-main-items ul {
+  list-style: none;
+  padding: 0px;
+}
+#nav-main-items ul li {
+  height: 30px;
+  padding: 5px 20px;
+}
+#nav-main a:link, #nav-main a:visited, #nav-main form input[type="submit"] {
+    color: #FFFFFF;
+}
+#nav-main a:hover, #nav-main a:focus, #nav-main form input[type="submit"]:hover {
+    font-size: 14px;
+
+    text-decoration: none;
+}

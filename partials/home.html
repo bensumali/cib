@@ -1,0 +1,21 @@
+<div id="employees-container">
+  <div class="employee-type-container" ng-repeat="(k, v) in employees">
+    <div class="employee-type-name-container">
+      {{ k }}
+    </div>
+    <div class="employee-container" ng-repeat="(k1, v1) in v track by $index">
+      <div class="employee-image-container">
+        {{ }}
+      </div>
+      <div class="employee-name-container">
+        {{ generateFullName(v1.name_first, v1.name_middle, v1.name_last) }}
+      </div>
+    </div>
+  </div>
+  <div id="no-employees-container" class="container text-center" ng-if="getEmployeesListSize() <= 0">
+    <div id="no-employees-text">
+      <h1>This department doesn't have any employees yet!</h1>
+      <p>Contact your department's administrator to add some.</p>
+    </div>
+  </div>
+</div>
