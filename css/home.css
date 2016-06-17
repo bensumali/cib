@@ -17,3 +17,43 @@
   vertical-align: middle;
   white-space: pre-line;
 }
+.employee-type-name-container {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 16px;
+  letter-spacing: 5px;
+  height: 40px;
+  padding: 10px;
+}
+.employee-container, #employee-columns-container {
+  height: 40px;
+  overflow: hidden;
+}
+.employee-container div, #employee-columns-container div {
+  float: left;
+}
+#employee-columns-container div {
+  text-align: center;
+  width: 12.5%;
+}
+#employee-columns-container {
+  font-size: 16px;
+  letter-spacing: 5px;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+#employee-name-spacer {
+  height: 100%;
+  width: 50% !important;
+}
+.employee-image-container {
+  height: 100%;
+  width: 20%;
+}
+.employee-name-container {
+  width: 30%;
+}
+.employee-status-in-container {
+  text-align: center;
+  width: 12.5%;
+}

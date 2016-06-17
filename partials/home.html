@@ -1,4 +1,19 @@
 <div id="employees-container">
+  <div id="employee-columns-container">
+    <div id="employee-name-spacer"></div>
+    <div id="employee-status-in">
+      IN
+    </div>
+    <div id="employee-status-out">
+      OUT
+    </div>
+    <div id="employee-status-other">
+      OTHER
+    </div>
+    <div id="employee-status-returning">
+      RETURNING
+    </div>
+  </div>
   <div class="employee-type-container" ng-repeat="(k, v) in employees">
     <div class="employee-type-name-container">
       {{ k }}
@@ -9,6 +24,9 @@
       </div>
       <div class="employee-name-container">
         {{ generateFullName(v1.name_first, v1.name_middle, v1.name_last) }}
+      </div>
+      <div class="employee-status-in-container">
+        <span class="fa fa-circle" ng-if="v1.status === 'IN'"></span>
       </div>
     </div>
   </div>
